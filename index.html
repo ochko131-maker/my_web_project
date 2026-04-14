@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний Гоё Вэб Сайт</title>
+    <style>
+        /* Ерөнхий загвар */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+        }
+
+        /* Нүүр хэсэг (Hero Section) */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* Гоё градиент дэвсгэр */
+            color: white;
+            height: 100vh;
+            /* Бүх дэлгэцийг бүрхэнэ */
+            display: flex;
+            justify-content: center;
+            /* Хөндлөн төвд байрлуулна */
+            align-items: center;
+            /* Босоо төвд байрлуулна */
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Доторх агуулга */
+        .hero-content {
+            max-width: 800px;
+        }
+
+        /* Гол гарчиг */
+        .hero h1 {
+            font-size: 4rem;
+            /* Том үсэг */
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            animation: fadeInUp 1s ease-out;
+            /* Гарч ирэх анимейшн */
+        }
+
+        /* Дэд гарчиг */
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: fadeInUp 1.2s ease-out;
+            /* Жаахан хоцорч гарч ирнэ */
+        }
+
+        /* Үйлдэл уриалах товчлуур */
+        .hero-btn {
+            background-color: white;
+            color: #764ba2;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            /* Зөөлөн шилжилт */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.4s ease-out;
+            /* Бүр хоцорч гарч ирнэ */
+        }
+
+        /* Товчлуур дээр хулгана очиход */
+        .hero-btn:hover {
+            transform: translateY(-5px);
+            /* Дээшээ жаахан хөдөлнө */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Гарч ирэх анимейшны тодорхойлолт */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Гар утас ба жижиг дэлгэцэнд тохируулах */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .hero-btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ҮЙЛЧИЛГЭЭНИЙ ШИНЭ ТҮВШИНД ТАВТАЙ МОРИЛУУ</h1>
+            <p>Бид таны санааг бодит вэб сайт болгон хувиргаж, бизнесээ өргөжүүлэхэд тань тусална. Орчин үеийн загвар,
+                хурдан ажиллагааг бид амлаж байна.</p>
+            <a href="#" class="hero-btn">Илүү ихийг мэдэх</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
